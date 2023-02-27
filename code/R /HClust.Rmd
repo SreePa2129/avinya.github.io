@@ -1,0 +1,53 @@
+---
+title: "Hierarchical Clustering"
+author: "Sreevani Basvaraj Patil"
+date: "2023-02-22"
+output: html_document
+---
+
+```{r setup, include=FALSE}
+knitr::opts_chunk$set(echo = TRUE)
+```
+
+```{r}
+#import the following libraries
+library(tidyverse)
+library(dplyr)
+library(gridExtra)
+library(webr)
+library(repr)
+library(ggplot2)
+library(plotly)
+library(proxy)
+```
+
+```{r}
+CPdata <- read.csv('./cluster_data.csv')
+head(CPdata)
+```
+
+```{r}
+# Because the output of scale function is 'matrix''array', I transform it to dataframe
+
+#data = as.data.frame(CPdata)
+#head(data)
+```
+```{r}
+data <- matrix( sample(seq(1,2000),200), ncol = 5 )
+
+# Cosine distance
+dist <- dist(data[ , c(2:5)] , diag=TRUE, method="cosine")
+
+# Hierarchical Clustering with hclust
+hc <- hclust(dist,method = "ward.D2")
+
+# Plot the result
+plot(hc,xlab = "Distance",hang = -1)
+
+```
+
+```{r}
+plot(hc,xlab = "Distance",hang = -1)
+rect.hclust(hc , k = 2, border = 2:6)
+abline(h=1.0, col= "blue")
+```

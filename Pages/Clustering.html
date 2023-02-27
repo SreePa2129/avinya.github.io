@@ -1,0 +1,407 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="utf-8">
+  <meta content="width=device-width, initial-scale=1.0" name="viewport">
+
+  <title>Climate penalty</title>
+  <meta content="" name="description">
+  <meta content="" name="keywords">
+
+  <!-- Favicons -->
+  <link href="../assets/img/favicon.png" rel="icon">
+  <link href="../assets/img/apple-touch-icon.png" rel="apple-touch-icon">
+
+  <!-- Google Fonts -->
+  <link href="https://fonts.googleapis.com/css?family=Open+Sans:300,300i,400,400i,600,600i,700,700i|Roboto:300,300i,400,400i,500,500i,700,700i&display=swap" rel="stylesheet">
+
+  <!-- Vendor CSS Files -->
+  <link href="../assets/vendor/animate.css/animate.min.css" rel="stylesheet">
+  <link href="../assets/vendor/aos/aos.css" rel="stylesheet">
+  <link href="../assets/vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet">
+  <link href="../assets/vendor/bootstrap-icons/bootstrap-icons.css" rel="stylesheet">
+  <link href="../assets/vendor/boxicons/css/boxicons.min.css" rel="stylesheet">
+  <link href="../assets/vendor/glightbox/css/glightbox.min.css" rel="stylesheet">
+  <link href="../assets/vendor/swiper/swiper-bundle.min.css" rel="stylesheet">
+
+  <!-- Template Main CSS File -->
+  <link href="../assets/css/style.css" rel="stylesheet">
+
+  <!-- =======================================================
+  * Template Name: Moderna - v4.11.0
+  * Template URL: https://bootstrapmade.com/free-bootstrap-template-corporate-moderna/
+  * Author: BootstrapMade.com
+  * License: https://bootstrapmade.com/license/
+  ======================================================== -->
+</head>
+
+<body>
+
+  <!-- ======= Header ======= -->
+  <header id="header" class="fixed-top ">
+    <div class="container d-flex align-items-center justify-content-lg-between">
+
+      <h1 class="text-light"><a href="index.html"><span style="color: white; font-size: 25px;">Avinya</span></a></h1>
+      <!-- Uncomment below if you prefer to use an image logo -->
+      <!-- <a href="index.html" class="logo me-auto me-lg-0"><img src="../assets/img/logo.png" alt="" class="img-fluid"></a>-->
+
+      <nav id="navbar" class="navbar">
+        <ul>
+          <li><a href="../index.html">Home</a></li>
+          <li><a href="EDA.html">EDA</a></li>
+          <li><a class="active " href="Clustering.html">Clustering</a></li>
+          <li><a  href="ARM.html">ARM</a></li>
+          
+          <li><a href="contact.html">Contact</a></li>
+        </ul>
+        <i class="bi bi-list mobile-nav-toggle"></i>
+      </nav><!-- .navbar -->
+      
+
+    </div>
+  </header><!-- End Header -->
+
+
+
+
+  
+  <main id="main">
+     <!-- ======= About Us Section ======= -->
+     <section class="breadcrumbs">
+      <div class="container">
+
+        <div class="d-flex justify-content-between align-items-center">
+          <h2>Clustering</h2>
+          <ol>
+            <li><a href="../index.html">Home</a></li>
+            <li>Clustering</li>
+          </ol>
+        </div>
+
+      </div>
+    </section><!-- End About Us Section -->
+   
+    <!-- ======= Features Section ======= -->
+   <!-- 
+  
+  Radio version of tabs.
+
+  Requirements:
+  - not rely on specific IDs for CSS (the CSS shouldn't need to know specific IDs)
+  - flexible for any number of unkown tabs [2-6]
+  - accessible
+
+  Caveats:
+  - since these are checkboxes the tabs not tab-able, need to use arrow keys
+
+  Also worth reading:
+  http://simplyaccessible.com/article/danger-aria-tabs/
+-->
+
+<div class="tabset">
+  <!-- Tab 1 -->
+  <input type="radio" name="tabset" id="tab1" aria-controls="marzen" checked>
+  <label for="tab1">Introduction</label>
+  <!-- Tab 2 -->
+  <input type="radio" name="tabset" id="tab2" aria-controls="rauchbier">
+  <label for="tab2">Data Gathering</label>
+  <!-- Tab 3 -->
+  <input type="radio" name="tabset" id="tab3" aria-controls="dunkles">
+  <label for="tab3">Analysis,Results & Conclusion</label>
+  
+  <div class="tab-panels">
+    <section id="marzen" class="tab-panel">
+      
+      <section class="features">
+        <div class="container">
+  
+          <div class="row" data-aos="fade-up">
+            <div class="col-md-5">
+              <img src="../assets/img/clust.png" class="img-fluid" alt="" style="height: 300px;">
+            </div>
+            <div class="col-md-7 pt-4">
+              <p style="font-size: 20px;font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif, Courier, monospace; padding: 10px;">
+                Clustering is a technique used in machine learning and data analysis to group similar data points together based on their characteristics or features. Clustering algorithms partition the data into subsets or clusters, such that the data points within each cluster are more similar to each other than to those in other clusters. There are two main types of clustering algorithms: partitional and hierarchical.
+                <br/>
+                Partitional clustering involves dividing the data into a fixed number of clusters, with each data point belonging to exactly one cluster. Popular partitional clustering algorithms include k-means, which partitions the data into k clusters by minimizing the sum of squared distances between data points and their cluster centers, and Gaussian Mixture Models (GMMs), which model the data as a mixture of Gaussians and use an Expectation-Maximization algorithm to estimate the parameters of the Gaussians.
+              </p>
+             
+
+            </div>
+            <p style="font-size: 20px;font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif, Courier, monospace; padding: 10px;">
+
+              Hierarchical clustering involves building a tree-like structure, called a dendrogram, that shows how the data can be progressively divided into smaller clusters. There are two main types of hierarchical clustering algorithms: agglomerative and divisive. Agglomerative clustering starts with each data point as its own cluster and merges the closest pairs of clusters iteratively until a stopping criterion is met, whereas divisive clustering starts with all data points in one cluster and recursively divides the data into smaller clusters.
+                </p>
+          </div>
+  
+          <div class="row" data-aos="fade-up">
+            <div class="col-md-5 order-1 order-md-2">
+              <img src="../assets/img/dist.jpeg" class="img-fluid" alt="" style="height: 200px">
+              <br/>
+              <img src="../assets/img/dist2.png" class="img-fluid" alt="" style="height: 300px">
+            </div>
+            <div class="col-md-7 pt-5 order-2 order-md-1">
+              
+              <p style="font-size: 20px;font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif, Courier, monospace; padding: 10px;">
+                In the context of clustering greenhouse gas (GHG) pollutants, the choice of distance metric can have a significant impact on the clustering results. Here are some distance metrics that are commonly used in clustering GHG pollutant data:
+
+Canberra distance: This distance metric is similar to the Manhattan distance but weights each variable by its magnitude. In the context of GHG pollutant data, this metric can be used to measure the distance between countries or regions based on their emissions of different GHG pollutants, with greater weight given to pollutants that have a higher overall magnitude.
+
+
+
+
+
+
+                
+                <ol class="fst-italic"><b>
+                  <li>             Euclidean distance: This is a common distance metric used in clustering and measures the straight-line distance between two points in n-dimensional space. For GHG pollutant data, this metric can be used to measure the distance between two countries or regions based on their emissions of different GHG pollutants.
+                  </li>
+                  <li>             Mahalanobis distance: This is a more advanced distance metric that takes into account the correlation between different variables in the data. In the context of GHG pollutant data, this metric can be used to measure the distance between countries or regions based on their emissions of different GHG pollutants while accounting for the correlation between them.
+                  </li>
+                  <li>             Cosine similarity: This distance metric is commonly used in text mining and natural language processing but can also be used in clustering GHG pollutant data. The cosine similarity measures the cosine of the angle between two vectors and is useful when comparing the similarity of two vectors with different magnitudes. In the context of GHG pollutant data, this metric can be used to measure the similarity between countries or regions based on their relative contributions of different GHG pollutants to total emissions.
+                  </li>
+                <p class="fst-italic">The choice of distance metric will depend on the specific characteristics of the GHG pollutant data and the goals of the clustering analysis. It is important to choose a distance metric that is appropriate for the data and can effectively capture the underlying patterns and relationships in the data.
+                </p>
+                </b>
+                </ol>
+                
+                
+                
+                
+                
+              </p>
+           
+            </div>
+            <hr/>
+          
+         
+  
+        </div>
+      </section><!-- End Features Section -->
+  </section>
+    <section id="rauchbier" class="tab-panel">
+     <h4 style="padding:10px">Data Gathering:</h4><br/>
+     <ol>
+      <li style="font-size: 20px;font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif, Courier, monospace; padding: 10px;">Used Clustering data: cluster_datav2.csv <br/>Link to dataset: <a href='' style="color: blue"></a></li>
+      <br/>
+      <div class="row">
+        <div class="col-lg-6">
+          <img src="../assets/img/dataset.jpg" class="img-fluid" alt="" style="height: 350px;width: 100%;">
+         
+          </div>
+          <div class="col-lg-6 pt-4 pt-lg-0">
+           
+            <img src="../assets/img/clust2.jpg" class="img-fluid" alt="" style="height: 300px">
+        </div> 
+          <p style="font-size: 20px;font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif, Courier, monospace; padding: 10px;">
+            
+            The dataset include numeric values that is pollutants emissions of Carbondioxide, Methane, FGas and Nitrogen oxide with the additional column
+            called Risk factor rated from 1 to 3 based on the emissions from the pollutants
+          </p>
+     <br/>
+
+      <li style="font-size: 20px;font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif, Courier, monospace; padding: 10px;">
+        Link to the code: <a></a>
+          <img src="../assets/img/hclust.jpg" class="img-fluid" alt="" style="height: 350px;width: 100%;">
+    
+          <p style="font-size: 20px;font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif, Courier, monospace; padding: 10px;">
+    
+            Hierarchical clustering is another commonly used clustering algorithm that can be applied to greenhouse gas (GHG) pollutant emissions data. Unlike k-means clustering, hierarchical clustering does not require the number of clusters to be pre-determined, and instead creates a tree-like structure called a dendrogram that shows the hierarchical relationships between clusters.
+          </p>
+        <p style="font-size: 20px;font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif, Courier, monospace; padding: 10px;">
+          K-means clustering is a commonly used partitional clustering algorithm that can be applied to greenhouse gas (GHG) pollutant emissions data. The goal of k-means clustering is to partition the data into k clusters based on the similarity of the emissions data for each country or region.
+         </p>
+        </li>
+    </ol>
+    </section>
+    <section id="dunkles" class="tab-panel">
+      <h4>Hierarchical Clustering</h4>
+      <p style="font-size: 20px;font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif, Courier, monospace; padding: 10px;">
+        The resulting clusters can be analyzed in the same way as the clusters obtained from k-means clustering to identify patterns and relationships in the GHG pollutant emissions data. However, since hierarchical clustering creates a dendrogram that shows the hierarchical relationships between clusters, it can be particularly useful for identifying sub-groups or clusters of countries or regions that are similar at different levels of granularity.
+      </p>
+      <div class="row">
+        <b>Dendrogram using Cosine similarity and H Clust with 3 clusters</b>
+
+        <div class="col-lg-6">
+          <img src="../assets/img/hclust1.jpg" class="img-fluid" alt="" >
+    
+        </div>
+
+        <div class="col-lg-6 pt-4 pt-lg-0">
+          <img src="../assets/img/hclust2.jpg" class="img-fluid" alt="" >
+      </div>
+     <br/>
+      <hr/>
+
+      <h4>
+       Choosing K
+      </h4>
+      <p style="font-size: 20px;font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif, Courier, monospace; padding: 10px;">
+        The elbow method and silhouette method are two common techniques used for determining the optimal number of clusters in a dataset. While these techniques are generally used for clustering analysis, they can also be applied to GHG emissions data to identify potential groupings or patterns in the data.
+<br/>
+In GHG emissions data, the silhouette method can be used to identify the optimal number of clusters or groups that maximize the similarity of emissions data within each group while minimizing the similarity of emissions data between groups. This can be useful for identifying potential patterns or relationships between emissions data across different industries, regions, or sectors.
+       </p>
+      <div class="row">
+        <b>Elbow method and silhouette methode to analyse the number of clusters to show</b>
+        <div class="col-lg-6">
+          <img src="../assets/img/elbow.jpg" class="img-fluid" alt="">
+    
+        </div>
+
+        <div class="col-lg-6 pt-4 pt-lg-0">
+          <img src="../assets/img/sil.jpg" class="img-fluid" alt="" >
+      </div>
+     <hr/>
+     <h4>Following Graphs shows the silhouette scores for k=2,3,4</h4>
+     <p style="font-size: 20px;font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif, Courier, monospace; padding: 10px;">
+      If we clustered the GHG emissions data into 2 groups, we would calculate the silhouette coefficient for each data point and calculate the average silhouette coefficient for each group. 
+      We would then repeat this process for k=3 and k=4, and compare the average silhouette coefficients for each group configuration to identify the optimal number of clusters.
+    <br/>
+    By comparing the average silhouette coefficients for k=2, 3, 4, and 5, we can identify the optimal number of clusters that maximizes the similarity of emissions data within each cluster and minimizes the similarity of emissions data between clusters.
+    </p>
+     <div class="row">
+
+      <div class="col-lg-6">
+        <img src="../assets/img/sil1.jpg" class="img-fluid" alt="" >
+  
+      </div>
+      <div class="col-lg-6 pt-4 pt-lg-0">
+       
+        <img src="../assets/img/sil2.jpg" class="img-fluid" alt="" >
+    </div> 
+    </div>
+    <hr/>
+    <div class="row">
+ 
+    <div class="col-lg-6 pt-4 pt-lg-0">
+       
+      <img src="../assets/img/sil3.jpg" class="img-fluid" alt="">
+  </div> 
+  <div class="col-lg-6 pt-4 pt-lg-0">
+  <img src="../assets/img/sil4.jpg" class="img-fluid" alt="" >
+</div> 
+    </div>
+    <hr/>
+  </div>
+  <h2>Conclusion</h2>
+  <br/>
+  <h4>From the elbow method and silhouette score, we see in elbow method the optimal number of clusters are 2, whereas
+    in silhouette method, silhouette score for k=2 is 71 % , k=3 is 69.99 and k=5 is 70 
+
+  </h4>
+     <p style="font-size: 20px;font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif, Courier, monospace; padding: 10px;">
+      As the optimal number of clusters may vary depending on the specific dataset and  the number of iterations we perform, it's important to use a combination of techniques, including the elbow method, silhouette score, and domain knowledge, to determine the optimal number of clusters for a given dataset. Additionally, it's important to carefully interpret the results of cluster analysis and use the insights gained to inform strategies to reduce GHG emissions.
+      Hence based on the silhouette score, we can say the optimal number of cluster is 2.
+      <br/>
+    </p>
+    <div class="row">
+      <b>For k=2, shows how the clusters are formed and centroids are placed</b>
+
+      <div class="col-lg-6">
+        <img src="../assets/img/k2.jpg" class="img-fluid" alt="" >
+  
+      </div>
+      <div class="col-lg-6 pt-4 pt-lg-0">
+       
+        <img src="../assets/img/k2c.jpg" class="img-fluid" alt="" >
+    </div> 
+    </div>
+    <hr/>
+    <div class="row">
+      <b>For k=3, shows how the clusters are formed and centroids are placed</b>
+
+      <div class="col-lg-6">
+        <img src="../assets/img/k3.jpg" class="img-fluid" alt="" >
+  
+      </div>
+      <div class="col-lg-6 pt-4 pt-lg-0">
+       
+        <img src="../assets/img/k3c.jpg" class="img-fluid" alt="" >
+    </div> 
+    </div>
+    <hr/>
+    <div class="row">
+      <b>For k=5, shows how the clusters are formed and centroids are placed</b>
+
+      <div class="col-lg-6">
+        <img src="../assets/img/k5.jpg" class="img-fluid" alt="" >
+  
+      </div>
+      <div class="col-lg-6 pt-4 pt-lg-0">
+       
+        <img src="../assets/img/k5c.jpg" class="img-fluid" alt="" >
+    </div> 
+    </div>
+    <br/>
+  </section>
+
+</div>
+
+
+
+    
+  
+
+  </main><!-- End #main -->
+
+  <!-- ======= Footer ======= -->
+  <footer id="footer" data-aos="fade-up" data-aos-easing="ease-in-out" data-aos-duration="500">
+
+
+    <div class="footer-top">
+      <div class="container">
+        <div class="row">
+         
+          <div class="col-lg-3 col-md-6 footer-contact">
+            <h3>Avinya<span>.</span></h3>
+            <p>
+              2995 Glenwood Dr <br>
+              Boulder 80301 CO, USA<br><br>
+              <strong>Phone:</strong> +1 720 675 6884<br>
+              <strong>Email:</strong> srpa2124@colorado.edu<br>
+            </p>
+            <div class="social-links mt-3">
+              
+              <a href="https://www.linkedin.com/in/sreevani-patil-67b77512a/ " class="linkedin"><i class="bx bxl-linkedin"></i></a>
+            </div>
+
+          </div>
+
+
+        </div>
+      </div>
+    </div>
+
+    <div class="container">
+      <div class="copyright">
+        &copy; Copyright <strong><span>Avinya</span></strong>. All Rights Reserved
+      </div>
+      <div class="credits">
+        <!-- All the links in the footer should remain intact. -->
+        <!-- You can delete the links only if you purchased the pro version. -->
+        <!-- Licensing information: https://bootstrapmade.com/license/ -->
+        <!-- Purchase the pro version with working PHP/AJAX contact form: https://bootstrapmade.com/free-bootstrap-template-corporate-moderna/ -->
+        Designed by <a href="https://bootstrapmade.com/">Sreevani Patil</a>
+      </div>
+    </div>
+  </footer><!-- End Footer -->
+
+  <a href="#" class="back-to-top d-flex align-items-center justify-content-center"><i class="bi bi-arrow-up-short"></i></a>
+
+  <!-- Vendor JS Files -->
+  <script src="../assets/vendor/purecounter/purecounter_vanilla.js"></script>
+  <script src="../assets/vendor/aos/aos.js"></script>
+  <script src="../assets/vendor/bootstrap/js/bootstrap.bundle.min.js"></script>
+  <script src="../assets/vendor/glightbox/js/glightbox.min.js"></script>
+  <script src="../assets/vendor/isotope-layout/isotope.pkgd.min.js"></script>
+  <script src="../assets/vendor/swiper/swiper-bundle.min.js"></script>
+  <script src="../assets/vendor/waypoints/noframework.waypoints.js"></script>
+  <script src="../assets/vendor/php-email-form/validate.js"></script>
+
+  <!-- Template Main JS File -->
+  <script src="../assets/js/main.js"></script>
+
+</body>
+
+</html>

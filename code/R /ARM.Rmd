@@ -1,0 +1,99 @@
+---
+title: "ARM"
+author: "Sreevani Basvaraj Patil"
+date: "2023-02-21"
+output: 
+  html_document: 
+    fig_caption: yes
+---
+
+```{r setup, include=FALSE}
+knitr::opts_chunk$set(echo = TRUE)
+```
+
+```{r}
+library(tidyverse)
+library(dplyr)
+library(gridExtra)
+library(webr)
+library(repr)
+library(ggplot2)
+library(plotly)
+library(arules)
+```
+
+```{r}
+#read the data
+tdata<- read.transactions('/Users/sbp/Downloads/transDatav2.csv',rm.duplicates = FALSE,format = "basket",sep = ",",cols = NULL)
+inspect(tdata)
+
+```
+
+```{r}
+rules = arules::apriori(tdata, parameter = list(support=0.35,confidence=0.4))
+#rules <- eclat (tData, parameter = list(supp = 0.01)) # calculates support for frequent items
+#Min Support 0.3, confidence as 0.5.
+#rules <- apriori(tdata,parameter = list(supp=0.3, conf=0.5))
+```
+
+```{r}
+inspect(rules)
+
+```
+
+```{r}
+high_rules <- apriori (tdata, parameter = list(supp = 0.01, conf = 0.7)) # Min Support as 0.001, confidence as 0.8.
+rules_conf <- sort (rules, by="confidence", decreasing=TRUE) # 'high-confidence' rules.
+```
+
+```{r}
+inspect(rules_conf) # show the support, lift and confidence for all rules
+
+```
+
+```{r}
+itemFrequencyPlot(tdata, topN=10,  cex.names=1)
+```
+
+```{r}
+#install.packages("arulesViz")
+library(arulesViz)
+
+plot(rules)
+```
+
+```{r}
+plot(rules, measure = "confidence")
+
+```
+
+```{r}
+subrules <- head(rules, by = "confidence")
+
+plot(subrules, method = "graph",  engine = "htmlwidget")
+```
+
+```{r}
+plot(rules, method="paracoord")
+
+```
+
+```{r}
+rules_lhs <- apriori(tdata, 
+                          parameter = list(supp=0.01, conf = 0.1),
+                          appearance = list(default="rhs",lhs= "Energy"))
+```
+
+```{r}
+inspect(rules_lhs)
+```
+
+```{r}
+rules_rhs <- apriori(tdata, 
+                          parameter = list(supp=0.1, conf = 0.8),
+                          appearance = list(default="lhs",rhs= "CO2"))
+```
+
+```{r}
+inspect(rules_rhs)
+```

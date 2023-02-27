@@ -1,0 +1,367 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="utf-8">
+  <meta content="width=device-width, initial-scale=1.0" name="viewport">
+
+  <title>Climate penalty</title>
+  <meta content="" name="description">
+  <meta content="" name="keywords">
+
+  <!-- Favicons -->
+  <link href="../assets/img/favicon.png" rel="icon">
+  <link href="../assets/img/apple-touch-icon.png" rel="apple-touch-icon">
+
+  <!-- Google Fonts -->
+  <link href="https://fonts.googleapis.com/css?family=Open+Sans:300,300i,400,400i,600,600i,700,700i|Roboto:300,300i,400,400i,500,500i,700,700i&display=swap" rel="stylesheet">
+
+  <!-- Vendor CSS Files -->
+  <link href="../assets/vendor/animate.css/animate.min.css" rel="stylesheet">
+  <link href="../assets/vendor/aos/aos.css" rel="stylesheet">
+  <link href="../assets/vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet">
+  <link href="../assets/vendor/bootstrap-icons/bootstrap-icons.css" rel="stylesheet">
+  <link href="../assets/vendor/boxicons/css/boxicons.min.css" rel="stylesheet">
+  <link href="../assets/vendor/glightbox/css/glightbox.min.css" rel="stylesheet">
+  <link href="../assets/vendor/swiper/swiper-bundle.min.css" rel="stylesheet">
+
+  <!-- Template Main CSS File -->
+  <link href="../assets/css/style.css" rel="stylesheet">
+
+  <!-- =======================================================
+  * Template Name: Moderna - v4.11.0
+  * Template URL: https://bootstrapmade.com/free-bootstrap-template-corporate-moderna/
+  * Author: BootstrapMade.com
+  * License: https://bootstrapmade.com/license/
+  ======================================================== -->
+</head>
+
+<body>
+
+  <!-- ======= Header ======= -->
+  <header id="header" class="fixed-top ">
+    <div class="container d-flex align-items-center justify-content-lg-between">
+
+      <h1 class="text-light"><a href="index.html"><span style="color: white; font-size: 25px;">Avinya</span></a></h1>
+      <!-- Uncomment below if you prefer to use an image logo -->
+      <!-- <a href="index.html" class="logo me-auto me-lg-0"><img src="../assets/img/logo.png" alt="" class="img-fluid"></a>-->
+
+      <nav id="navbar" class="navbar">
+        <ul>
+          <li><a href="../index.html">Home</a></li>
+          <li><a href="EDA.html">EDA</a></li>
+          <li><a href="Clustering.html">Clustering</a></li>
+          <li><a class="active " href="ARM.html">ARM</a></li>
+          
+          <li><a href="contact.html">Contact</a></li>
+        </ul>
+        <i class="bi bi-list mobile-nav-toggle"></i>
+      </nav><!-- .navbar -->
+      
+
+    </div>
+  </header><!-- End Header -->
+
+
+
+
+  
+  <main id="main">
+     <!-- ======= About Us Section ======= -->
+     <section class="breadcrumbs">
+      <div class="container">
+
+        <div class="d-flex justify-content-between align-items-center">
+          <h2>Association Rule Mining</h2>
+          <ol>
+            <li><a href="../index.html">Home</a></li>
+            <li>ARM</li>
+          </ol>
+        </div>
+
+      </div>
+    </section><!-- End About Us Section -->
+   
+    <!-- ======= Features Section ======= -->
+   <!-- 
+  
+  Radio version of tabs.
+
+  Requirements:
+  - not rely on specific IDs for CSS (the CSS shouldn't need to know specific IDs)
+  - flexible for any number of unkown tabs [2-6]
+  - accessible
+
+  Caveats:
+  - since these are checkboxes the tabs not tab-able, need to use arrow keys
+
+  Also worth reading:
+  http://simplyaccessible.com/article/danger-aria-tabs/
+-->
+
+<div class="tabset">
+  <!-- Tab 1 -->
+  <input type="radio" name="tabset" id="tab1" aria-controls="marzen" checked>
+  <label for="tab1">Introduction</label>
+  <!-- Tab 2 -->
+  <input type="radio" name="tabset" id="tab2" aria-controls="rauchbier">
+  <label for="tab2">Data Analysis</label>
+  <!-- Tab 3 -->
+  <input type="radio" name="tabset" id="tab3" aria-controls="dunkles">
+  <label for="tab3">Results & Conclusion</label>
+  
+  <div class="tab-panels">
+    <section id="marzen" class="tab-panel">
+      
+      <section class="features">
+        <div class="container">
+  
+          <div class="row" data-aos="fade-up">
+            <div class="col-md-5">
+              <img src="../assets/img/arm.png" class="img-fluid" alt="">
+            </div>
+            <div class="col-md-7 pt-4">
+              <p style="font-size: 20px;font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif, Courier, monospace; padding: 10px;">
+                ARM (Association Rule Mining) is a data mining technique used to identify relationships and associations between items in a dataset. It involves analyzing large datasets to find patterns, correlations, and associations among the items.
+  
+                Support, confidence, and lift are three common measures used in ARM.
+                
+                Support is the frequency with which an item or itemset appears in the dataset. It is calculated as the number of transactions containing the item or itemset divided by the total number of transactions in the dataset.
+                
+                Confidence measures the strength of the relationship between two items in the dataset. It is calculated as the number of transactions containing both items divided by the number of transactions containing the first item.
+                
+                Lift measures the extent to which the presence of one item affects the presence of other items   
+              </p>
+            </div>
+          </div>
+  
+          <div class="row" data-aos="fade-up">
+            <div class="col-md-5 order-1 order-md-2">
+              <img src="../assets/img/apriori.jpeg" class="img-fluid" alt="" style="height: 300px">
+  
+              <img src="../assets/img/apriori.jpg" class="img-fluid" alt="" style="height: 300px">
+            </div>
+            <div class="col-md-7 pt-5 order-2 order-md-1">
+              
+              <p class="fst-italic">
+                The Apriori algorithm is a popular algorithm used for Association Rule Mining (ARM), a data mining technique used to identify relationships and associations between items in a dataset. The algorithm works by identifying frequent itemsets, which are groups of items that occur together frequently in a dataset, and then generating association rules from these itemsets.
+  
+                The algorithm works in the following steps:
+                
+                <ol class="fst-italic"><b>
+                  <li>              Set a minimum support threshold: The minimum support threshold is the minimum frequency with which an itemset must occur in the dataset to be considered frequent. This threshold is set by the user.
+                  </li>
+                  <li>              Identify frequent 1-itemsets: The algorithm scans the dataset to identify all 1-itemsets that occur with a frequency greater than or equal to the minimum support threshold.
+                  </li>
+                  <li>              Generate candidate itemsets of length k: The algorithm generates candidate itemsets of length k by joining frequent (k-1)-itemsets. For example, if the frequent 1-itemsets are {A, B, C}, then the candidate 2-itemsets are {AB, AC, BC}.
+                  </li>
+                  <li>              Prune infrequent candidate itemsets: The algorithm scans the dataset again to count the frequency of each candidate itemset. Any candidate itemsets that occur with a frequency less than the minimum support threshold are pruned and not considered in the next iteration.
+                  </li>
+                  <li>              Repeat steps 3 and 4 until no more frequent itemsets can be found: The algorithm repeats steps 3 and 4 to generate candidate itemsets of increasing length until no more frequent itemsets can be found.
+                  </li>
+                  <li>              Generate association rules: Once all frequent itemsets are identified, the algorithm generates association rules from these itemsets. Association rules are statements of the form "If A then B", where A and B are itemsets. The confidence of an association rule is the percentage of transactions containing A that also contain B. 
+                  </li>
+                </b>
+                </ol>
+                
+                
+                
+                
+                
+              </p>
+           
+            </div>
+            <hr/>
+            <div class="row" data-aos="fade-up">
+              <div class="col-md-5 order-1 order-md-2">
+              </div>
+              <div class="col-md-7 pt-5 order-2 order-md-1">
+                
+                <p class="fst-italic">
+                
+                </p>
+             
+              </div>
+          </div>
+  
+       
+  
+         
+  
+        </div>
+      </section><!-- End Features Section -->
+  </section>
+    <section id="rauchbier" class="tab-panel">
+     <h4 style="padding:10px">Data Gathering:</h4><br/>
+     <ol>
+      <li style="font-size: 20px;font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif, Courier, monospace; padding: 10px;">Used transaction data: transDatav2.csv. <br/>Link to dataset: <a href='' style="color: blue"></a></li>
+      <br/>
+      <div class="row">
+        <div class="col-lg-6">
+         <b> Transaction dataset</b>
+          <img src="../assets/img/transv2.jpg" class="img-fluid" alt="" style="height: 250px">
+    
+        </div>
+        <div class="col-lg-6 pt-4 pt-lg-0">
+          <b>Frequent Items sample</b>
+          <img src="../assets/img/trans.jpg" class="img-fluid" alt="" style="height: 250px">
+      </div>
+     <br/>
+      <li style="font-size: 20px;font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif, Courier, monospace; padding: 10px;">
+        Link to the code: <a></a>
+        <p style="font-size: 20px;font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif, Courier, monospace; padding: 10px;">ARM can be used to analyze data from energy usage in buildings and identify patterns that are associated with higher GHG emissions. 
+          By analyzing the data, it may be possible to identify which activities are contributing the most to emissions, and to develop strategies to reduce emissions.</p>
+        <ul>
+          <li>CO2: ARM can be used to analyze data related to energy usage, transportation, and other activities that produce CO2 emissions. By identifying patterns and relationships between different variables, such as energy usage, transportation methods, and building materials, it may be possible to develop strategies to reduce CO2 emissions.
+          <li>
+            
+            CH4: ARM can be used to analyze data related to agricultural and waste management activities that produce CH4 emissions. By identifying patterns and relationships between different variables, such as types of waste, waste management methods, and agricultural practices, it may be possible to develop strategies to reduce CH4 emissions.
+            
+   
+          </li>
+          <li>
+            N2O: ARM can be used to analyze data related to agricultural and industrial activities that produce N2O emissions. By identifying patterns and relationships between different variables, such as fertilizer usage, agricultural practices, and industrial processes, it may be possible to develop strategies to reduce N2O emissions.
+            
+
+          </li>
+          <li>
+            F gases: ARM can be used to analyze data related to industrial processes and equipment that produce F gases, such as refrigerants and insulating materials. By identifying patterns and relationships between different variables, such as types of equipment, maintenance practices, and production processes, it may be possible to develop strategies to reduce F gas emissions.</li>
+
+          </li>
+          </ul>
+        </li>
+     
+    </ol>
+    </section>
+    <section id="dunkles" class="tab-panel">
+      <h4>Top 15 Rules for Support, Confidence, and Lift</h4>
+      <img src="../assets/img/top15.jpg" class="img-fluid" alt="" style="height: 400px;width: 100%;">
+      <hr/>
+      <h4>Frequent item sets with support 0.35 and confidence 0.40</h4>
+      <br/>
+      <p style="font-size: 20px;font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif, Courier, monospace; padding: 10px;">
+        Support: This parameter sets the minimum support level for a rule to be considered interesting. In the context of GHG pollutants, support represents the proportion of transactions (or cases) that contain both the antecedent and consequent of the rule. For example, a rule might specify that high levels of fertilizer use are associated with high levels of N2O emissions. The support level for this rule would be the proportion of cases in which both high fertilizer use and high N2O emissions were observed. In this case, the support level is set to 0.35, meaning that a rule must appear in at least 35% of the cases to be considered interesting.
+<br/>
+Confidence: This parameter sets the minimum confidence level for a rule to be considered interesting. In the context of GHG pollutants, confidence represents the proportion of cases that contain the antecedent (e.g., high fertilizer use) that also contain the consequent (e.g., high N2O emissions). In this case, the confidence level is set to 0.4, meaning that a rule must have a confidence of at least 40% to be considered interesting.
+
+
+      </p>
+      <img src="../assets/img/ARM.jpg" class="img-fluid" alt="" style="height: 400px;width: 100%;">
+
+      <hr/>
+
+      <h4>
+        Top 10 Frequently occuring items in the given transaction data
+      </h4>
+      <p style="font-size: 20px;font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif, Courier, monospace; padding: 10px;">
+
+        The top 10 emissions you listed, including CH4, N2O, CO2, energy, fugitive emissions, industrial process, land usage, F gas, agriculture, and bunker fuels, represent a wide range of sources and types of greenhouse gas emissions. Analyzing the associations between these different emissions can provide insights into the factors that contribute to high levels of emissions and suggest strategies for reducing those emissions.
+
+For example, an analysis of the associations between these different emissions might reveal that there is a strong association between agriculture-related emissions (such as N2O from fertilizer use) and land usage. This association might suggest that reducing land usage for agriculture or implementing more sustainable agricultural practices could help to reduce N2O emissions and other GHG emissions associated with agriculture.
+
+Similarly, an analysis might find that there is a strong association between energy-related emissions (such as CO2 from fossil fuel combustion) and industrial processes. This association might suggest that improving energy efficiency in industrial processes or transitioning to cleaner sources of energy could help to reduce overall CO2 emissions.
+
+By analyzing the associations between different types of emissions, it is possible to identify patterns and relationships that can inform strategies to reduce greenhouse gas emissions. Ultimately, reducing emissions from all of these sources will be necessary to mitigate the impact of climate change and work towards a more sustainable future.
+      </p>
+      <div class="row">
+        <div class="col-lg-6">
+         <b> Bar Chart displaying top 10 items</b>
+          <img src="../assets/img/Freqset.jpg" class="img-fluid" alt="">
+    
+        </div>
+
+        <div class="col-lg-6 pt-4 pt-lg-0">
+          <img src="../assets/img/scatterarm.jpg" class="img-fluid" alt="" >
+      </div>
+     <hr/>
+     <h4>Following Graphs shows the association between the GHG pollutants</h4>
+     <p style="font-size: 20px;font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif, Courier, monospace; padding: 10px;">
+      The result of association analysis in GHG emissions provides insights into the patterns and relationships between different variables that contribute to greenhouse gas emissions. By analyzing the associations between variables, it is possible to identify factors that are associated with higher emissions and develop strategies to reduce those emissions.
+
+For example, let's say that an association rule mining analysis of GHG emissions data found a strong association between the use of certain types of refrigerants and the emission of F gases. This association might suggest that replacing those refrigerants with more environmentally friendly alternatives could reduce F gas emissions.
+
+Similarly, an analysis of agricultural data might find an association between the use of certain fertilizers and the emission of N2O. This association might suggest that reducing the use of those fertilizers or switching to alternative fertilizers could help to reduce N2O emissions.
+
+In both cases, the associations discovered through association rule mining can be used to inform strategies to reduce greenhouse gas emissions. By identifying the factors that contribute to emissions and developing strategies to mitigate those factors, it is possible to reduce overall GHG emissions and work towards a more sustainable future.
+     </p>
+     <div class="row">
+      <div class="col-lg-6">
+        <img src="../assets/img/associ.jpg" class="img-fluid" alt="" style="height: 400px">
+  
+      </div>
+      <div class="col-lg-6 pt-4 pt-lg-0">
+       
+        <img src="../assets/img/associ2.jpg" class="img-fluid" alt="" style="height: 300px">
+    </div> 
+    </section>
+  </div>
+  
+</div>
+
+
+
+    
+  
+
+  </main><!-- End #main -->
+
+  <!-- ======= Footer ======= -->
+  <footer id="footer" data-aos="fade-up" data-aos-easing="ease-in-out" data-aos-duration="500">
+
+
+    <div class="footer-top">
+      <div class="container">
+        <div class="row">
+         
+          <div class="col-lg-3 col-md-6 footer-contact">
+            <h3>Avinya<span>.</span></h3>
+            <p>
+              2995 Glenwood Dr <br>
+              Boulder 80301 CO, USA<br><br>
+              <strong>Phone:</strong> +1 720 675 6884<br>
+              <strong>Email:</strong> srpa2124@colorado.edu<br>
+            </p>
+            <div class="social-links mt-3">
+              
+              <a href="https://www.linkedin.com/in/sreevani-patil-67b77512a/ " class="linkedin"><i class="bx bxl-linkedin"></i></a>
+            </div>
+
+          </div>
+
+
+        </div>
+      </div>
+    </div>
+
+    <div class="container">
+      <div class="copyright">
+        &copy; Copyright <strong><span>Avinya</span></strong>. All Rights Reserved
+      </div>
+      <div class="credits">
+        <!-- All the links in the footer should remain intact. -->
+        <!-- You can delete the links only if you purchased the pro version. -->
+        <!-- Licensing information: https://bootstrapmade.com/license/ -->
+        <!-- Purchase the pro version with working PHP/AJAX contact form: https://bootstrapmade.com/free-bootstrap-template-corporate-moderna/ -->
+        Designed by <a href="https://bootstrapmade.com/">Sreevani Patil</a>
+      </div>
+    </div>
+  </footer><!-- End Footer -->
+
+  <a href="#" class="back-to-top d-flex align-items-center justify-content-center"><i class="bi bi-arrow-up-short"></i></a>
+
+  <!-- Vendor JS Files -->
+  <script src="../assets/vendor/purecounter/purecounter_vanilla.js"></script>
+  <script src="../assets/vendor/aos/aos.js"></script>
+  <script src="../assets/vendor/bootstrap/js/bootstrap.bundle.min.js"></script>
+  <script src="../assets/vendor/glightbox/js/glightbox.min.js"></script>
+  <script src="../assets/vendor/isotope-layout/isotope.pkgd.min.js"></script>
+  <script src="../assets/vendor/swiper/swiper-bundle.min.js"></script>
+  <script src="../assets/vendor/waypoints/noframework.waypoints.js"></script>
+  <script src="../assets/vendor/php-email-form/validate.js"></script>
+
+  <!-- Template Main JS File -->
+  <script src="../assets/js/main.js"></script>
+
+</body>
+
+</html>
