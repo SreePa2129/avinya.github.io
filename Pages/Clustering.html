@@ -108,15 +108,17 @@
   <label for="tab2">Data Gathering</label>
   <!-- Tab 3 -->
   <input type="radio" name="tabset" id="tab3" aria-controls="dunkles">
-  <label for="tab3">Analysis,Results & Conclusion</label>
+  <label for="tab3">Analysis & Results </label>
+  <!-- Tab 4 -->
+  <input type="radio" name="tabset" id="tab4" aria-controls="rach">
+  <label for="tab4">Conclusion</label>
   
   <div class="tab-panels">
     <section id="marzen" class="tab-panel">
       
-      <section class="features">
         <div class="container">
   
-          <div class="row" data-aos="fade-up">
+          <div class="row" >
             <div class="col-md-5">
               <img src="../assets/img/clust.png" class="img-fluid" alt="" style="height: 300px;">
             </div>
@@ -179,9 +181,7 @@ Canberra distance: This distance metric is similar to the Manhattan distance but
   
         </div>
       </section><!-- End Features Section -->
-  </section>
     <section id="rauchbier" class="tab-panel">
-     <h4 style="padding:10px">Data Gathering:</h4><br/>
      <ol>
       <li style="font-size: 20px;font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif, Courier, monospace; padding: 10px;">Used Clustering data: cluster_datav2.csv <br/>
         Link to the dataset: <a href="https://github.com/SreePa2129/avinya.github.io/tree/main/data/ClusterData/cluster_data.csv">Dataset</a>
@@ -289,7 +289,7 @@ In GHG emissions data, the silhouette method can be used to identify the optimal
     </div>
     <hr/>
   </div>
-  <h2>Conclusion</h2>
+  
   <br/>
   <h4>From the elbow method and silhouette score, we see in elbow method the optimal number of clusters are 2, whereas
     in silhouette method, silhouette score for k=2 is 71 % , k=3 is 69.99 and k=5 is 70 
@@ -340,6 +340,34 @@ In GHG emissions data, the silhouette method can be used to identify the optimal
     </div>
     <br/>
   </section>
+
+  <section id="rach" class="tab-panel">
+          <div class="row" >
+          
+          <div class="col-md-7">
+            <p style="font-size: 20px;font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif, Courier, monospace; padding: 10px;">
+              On chosing optimal clusters based on GHG pollutants with risk factors associated with them, there are a few potential conclusions we could draw:
+
+              Grouping pollutants into clusters can help identify common risk factors. By clustering GHG pollutants, you may have identified common factors that contribute to their emissions or impact on the environment, such as industrial activities or transportation.
+              
+              Risk factors associated with GHG pollutants can inform mitigation strategies. If you have identified risk factors associated with each cluster, you can use that information to develop targeted strategies for reducing GHG emissions and mitigating their impact on the environment.
+              
+            </p>
+            <p style="font-size: 20px;font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif, Courier, monospace; padding: 10px;">
+
+              Cluster analysis can help prioritize actions. By identifying the clusters with the highest risk factors, you can prioritize actions that will have the most impact in reducing GHG emissions and addressing environmental risks.
+              
+             While clustering is a useful tool, it may not capture all of the complexities of GHG emissions and their associated risks. Further analysis may be necessary to fully understand the relationships between pollutants and risk factors, and to develop effective mitigation strategies.
+              
+            </p>
+          </div>
+          <div class="col-md-5">
+            <img src="../assets/img/conclusion.gif" class="img-fluid" alt="" style="height: 450px;width: 800px;">
+          </div>
+        </div>
+    
+    
+   </section>
 
 </div>
 
