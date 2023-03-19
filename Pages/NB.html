@@ -1,0 +1,277 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="utf-8">
+  <meta content="width=device-width, initial-scale=1.0" name="viewport">
+
+  <title>Climate penalty</title>
+  <meta content="" name="description">
+  <meta content="" name="keywords">
+
+  <!-- Favicons -->
+  <link href="../assets/img/favicon.png" rel="icon">
+  <link href="../assets/img/apple-touch-icon.png" rel="apple-touch-icon">
+
+  <!-- Google Fonts -->
+  <link href="https://fonts.googleapis.com/css?family=Open+Sans:300,300i,400,400i,600,600i,700,700i|Roboto:300,300i,400,400i,500,500i,700,700i&display=swap" rel="stylesheet">
+
+  <!-- Vendor CSS Files -->
+  <link href="../assets/vendor/animate.css/animate.min.css" rel="stylesheet">
+  <link href="../assets/vendor/aos/aos.css" rel="stylesheet">
+  <link href="../assets/vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet">
+  <link href="../assets/vendor/bootstrap-icons/bootstrap-icons.css" rel="stylesheet">
+  <link href="../assets/vendor/boxicons/css/boxicons.min.css" rel="stylesheet">
+  <link href="../assets/vendor/glightbox/css/glightbox.min.css" rel="stylesheet">
+  <link href="../assets/vendor/swiper/swiper-bundle.min.css" rel="stylesheet">
+
+  <!-- Template Main CSS File -->
+  <link href="../assets/css/style.css" rel="stylesheet">
+
+  <!-- =======================================================
+  * Template Name: Moderna - v4.11.0
+  * Template URL: https://bootstrapmade.com/free-bootstrap-template-corporate-moderna/
+  * Author: BootstrapMade.com
+  * License: https://bootstrapmade.com/license/
+  ======================================================== -->
+</head>
+
+<body>
+
+  <!-- ======= Header ======= -->
+  <header id="header" class="fixed-top ">
+    <div class="container d-flex align-items-center justify-content-lg-between">
+
+      <h1 class="text-light"><a href="../index.html"><span style="color: white; font-size: 25px;">Avinya</span></a></h1>
+      <!-- Uncomment below if you prefer to use an image logo -->
+      <!-- <a href="index.html" class="logo me-auto me-lg-0"><img src="../assets/img/logo.png" alt="" class="img-fluid"></a>-->
+
+      <nav id="navbar" class="navbar">
+        <ul>
+          <li><a href="../index.html">Home</a></li>
+          <li><a href="EDA.html">EDA</a></li>
+          <li><a href="Clustering.html">Clustering</a></li>
+          <li><a  href="ARM.html">ARM</a></li>
+          <li><a href="DT.html">Decision Tree</a></li>
+          <li><a class="active "  href="NB.html">Naive Bayes</a></li>
+        </ul>
+        <i class="bi bi-list mobile-nav-toggle"></i>
+      </nav><!-- .navbar -->
+      
+
+    </div>
+  </header><!-- End Header -->
+
+
+
+
+  
+  <main id="main">
+     <!-- ======= About Us Section ======= -->
+     <section class="breadcrumbs">
+      <div class="container">
+
+        <div class="d-flex justify-content-between align-items-center">
+          <h2>Naive Bayes</h2>
+          <ol>
+            <li><a href="../index.html">Home</a></li>
+            <li>Naive Bayes</li>
+          </ol>
+        </div>
+
+      </div>
+    </section><!-- End About Us Section -->
+   
+    <!-- ======= Features Section ======= -->
+   <!-- 
+  
+  Radio version of tabs.
+
+  Requirements:
+  - not rely on specific IDs for CSS (the CSS shouldn't need to know specific IDs)
+  - flexible for any number of unkown tabs [2-6]
+  - accessible
+
+  Caveats:
+  - since these are checkboxes the tabs not tab-able, need to use arrow keys
+
+  Also worth reading:
+  http://simplyaccessible.com/article/danger-aria-tabs/
+-->
+
+<div class="tabset">
+  <!-- Tab 1 -->
+  <input type="radio" name="tabset" id="tab1" aria-controls="marzen" checked>
+  <label for="tab1">Introduction</label>
+ 
+  <!-- Tab 3 -->
+  <input type="radio" name="tabset" id="tab3" aria-controls="dunkles">
+  <label for="tab3"> Data Prep & Analysis </label>
+  <!-- Tab 4 -->
+  <input type="radio" name="tabset" id="tab4" aria-controls="rach">
+  <label for="tab4">Results & Conclusion</label>
+  
+  <div class="tab-panels">
+    <section id="marzen" class="tab-panel">
+      
+        <div class="container">
+  
+          <div class="row" >
+            <div class="col-md-5">
+              <img src="../assets/img/nb1.jpeg" class="img-fluid" alt="" >
+            </div>
+            <div class="col-md-7 pt-4">
+              
+              <p style="font-size: 20px;font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif, Courier, monospace;">
+
+                Naive Bayes (NB) is a classification algorithm based on Bayes' theorem, which is a fundamental theorem in probability theory. It is called "naive" because it makes a simplifying assumption that the features are conditionally independent of each other given the class label. This assumption simplifies the calculations required to estimate the probabilities involved in the algorithm and makes it computationally efficient.
+
+Naive Bayes works by calculating the probability of each class label given the observed feature vector. 
+It does this by using Bayes' theorem, which states that the probability of a hypothesis (in this case, a class label) given some observed evidence is proportional to the product of the probability of the evidence given the hypothesis and the prior probability of the hypothesis.
+  </p>
+            </div>
+            <p style="font-size: 20px;font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif, Courier, monospace; padding: 10px;">
+              Multinomial NB is a variant of NB that works with categorical data, such as text data, where the features represent the frequencies of occurrence of different words or tokens in a document. The algorithm models the probability of each word in the vocabulary given a particular class label, and then uses Bayes' theorem to calculate the probability of each class label given the observed feature vector.
+
+
+              </p>
+          </div>
+  
+          <div class="row" data-aos="fade-up">
+            <div class="col-md-5 order-1 order-md-2">
+              <img src="../assets/img/nb2.jpeg" class="img-fluid" alt="" style="height: 200px">
+              <br/>
+              <img src="../assets/img/nb3.jpeg" class="img-fluid" alt="" style="height: 300px">
+            </div>
+            <div class="col-md-7 pt-5 order-2 order-md-1">
+              
+              <p style="font-size: 20px;font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif, Courier, monospace; padding: 10px;">
+                Bernoulli NB is another variant of NB that works with binary data, such as presence or absence of certain features in a document. In Bernoulli NB, the algorithm models the probability of each feature being present or absent given a particular class label, and then uses Bayes' theorem to calculate the probability of each class label given the observed feature vector.
+
+                Both Multinomial and Bernoulli NB can be used for a variety of classification tasks, such as spam filtering, sentiment analysis, document classification, and more. They are particularly well-suited for text classification tasks, where the features are discrete and sparse, and the number of features can be very large. These algorithms are also very easy to implement and can perform well even with limited training data. However, their performance may suffer in cases where the independence assumption is not satisfied, or where the features are highly correlated with each other. 
+                
+              </p>
+           
+            </div>
+            <hr/>
+          
+         
+  
+        </div>
+      </section><!-- End Features Section -->
+    <section id="rauchbier" class="tab-panel">
+      <p style="font-size: 20px;font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif, Courier, monospace; padding: 10px;">Used Clustering data: cluster_datav2.csv <br/>
+        Link to the dataset: <a href="https://github.com/SreePa2129/avinya.github.io/tree/main/data/ClusterData/cluster_data.csv">Dataset</a>
+       <br/> Link to the Python code: <a href="https://github.com/SreePa2129/avinya.github.io/blob/main/code/Python/MachineLearning_ProjectV2.ipynb">Code</a>
+      </p>
+      <div class="row">
+        <div class="col-lg-6">
+          <img src="../assets/img/sample.jpg" class="img-fluid" alt="" style="height: 350px;width: 100%;">
+         
+          </div>
+         
+          <p style="font-size: 20px;font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif, Courier, monospace; padding: 10px;">
+            
+            The dataset include numeric values that is pollutants emissions of Carbondioxide, Methane, FGas and Nitrogen oxide with the additional column
+            called Risk factor rated from 1 to 3 based on the emissions from the pollutants
+          </p>
+          <h5>Training and Testing data</h5>
+          <p style="font-size: 20px;font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif, Courier, monospace; padding: 10px;">
+            In machine learning, a training set and a testing set are two distinct datasets that are used to develop and evaluate a machine learning model, respectively.
+
+    </p>
+    <div class="col-lg-6">
+      <img src="../assets/img/train.jpg" class="img-fluid" alt="" >
+
+    </div>
+
+    <div class="col-lg-6 pt-4 pt-lg-0">
+      <img src="../assets/img/test.jpg" class="img-fluid" alt="" >
+  </div>
+         
+        <p style="font-size: 20px;font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif, Courier, monospace; padding: 10px;">
+          The training set is the dataset used to train the model, which means that the model learns from this dataset to make predictions on new, unseen data. The training set is typically larger than the testing set and should be representative of the population or problem that the model is trying to solve. The training set consists of input features (independent variables) and corresponding output labels (dependent variable).
+
+The testing set is the dataset used to evaluate the performance of the trained model. The testing set is used to simulate new, unseen data, and the model's predictions are compared to the true labels to determine the accuracy of the model. The testing set should also be representative of the population or problem that the model is trying to solve, and it should be distinct from the training set.
+
+To create a training set and testing set for GHG emissions, one approach would be to randomly split the available data into two disjoint sets. The split can be done using a predefined ratio, such as 80% of the data for training and 20% for testing, or using a stratified sampling approach that ensures that the training and testing sets have similar distribution of classes (e.g., similar amounts of GHG emissions from different sectors).
+
+It is essential to keep the training set and testing set disjoint because the model should not be exposed to the testing data during the training phase. If the model is trained on the testing set, it may learn to overfit to the testing data and perform poorly on new, unseen data. Keeping the two sets disjoint ensures that the model's performance on the testing set is an accurate reflection of its ability to generalize to new, unseen data.
+      
+        </p>
+     <br/>
+     
+      
+    </section>
+    <section id="dunkles" class="tab-panel">
+      <h4>Confusion Matrix</h4>
+      <p style="font-size: 20px;font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif, Courier, monospace; padding: 10px;">
+        A confusion matrix is a table that is used to evaluate the performance of a classification model by comparing the predicted labels to the true labels. The confusion matrix for GHG emissions would have four possible outcomes: true positives, false positives, true negatives, and false negatives.
+
+In the context of GHG emissions, a true positive would be a correctly predicted high GHG emissions label, a false positive would be a low GHG emissions label incorrectly predicted as high GHG emissions, a true negative would be a correctly predicted low GHG emissions label, and a false negative would be a high GHG emissions label incorrectly predicted as low GHG emissions.
+
+ </p>
+
+      <div class="row">
+        <div class="col-md-5 order-1 order-md-2">
+          <img src="../assets/img/confusion.png" class="img-fluid" alt="" >
+          
+        </div>
+        <p style="font-size: 20px;font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif, Courier, monospace; padding: 10px;">
+          The confusion matrix can be used to calculate various performance metrics of the classification model, such as accuracy, precision, recall, and F1 score. These metrics provide different insights into the model's performance and can be used to evaluate the trade-offs between different types of errors.
+
+For example, in the context of GHG emissions, precision would measure the proportion of correctly identified high GHG emissions cases among all cases that were predicted as high GHG emissions, while recall would measure the proportion of correctly identified high GHG emissions cases among all actual high GHG emissions cases. A high precision would mean that there are few false positives, while a high recall would mean that there are few false negatives.
+
+By analyzing the confusion matrix and the associated performance metrics, one can evaluate the performance of the classification model and make adjustments if necessary to improve its accuracy and ability to predict GHG emissions levels.
+     
+        </p>
+
+       <h5>
+        Accuracy score
+       </h5>
+       <p style="font-size: 20px;font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif, Courier, monospace; padding: 10px;">
+        An accuracy score of 80% for GHG emissions could mean different things depending on the context and the specific application of the accuracy score. However, in general, an accuracy score of 80% suggests that the method or model used to estimate or predict GHG emissions is relatively reliable, but it may still have some room for improvement.
+
+     </p>
+       <p style="font-size: 20px;font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif, Courier, monospace; padding: 10px;">
+        For example, if the accuracy score is derived from a machine learning model that predicts GHG emissions from a set of input variables (such as energy consumption, transportation usage, and population density), an accuracy score of 80% suggests that the model is able to correctly predict 80% of the GHG emissions data that it is trained on. This means that the model is fairly accurate but still makes errors on 20% of the data.
+
+However, it's important to note that the significance of an accuracy score may depend on the specific application or use case. For instance, an accuracy score of 80% may be considered acceptable in some contexts (e.g., research studies), but not sufficient for decision-making purposes in other contexts (e.g., policy-making or business decisions). Therefore, it's crucial to evaluate the accuracy score in light of the specific needs and requirements of the application.
+  
+</p>
+
+    
+     
+  
+  </section>
+
+ 
+
+</div>
+
+
+
+    
+  
+
+  </main><!-- End #main -->
+
+  
+  <a href="#" class="back-to-top d-flex align-items-center justify-content-center"><i class="bi bi-arrow-up-short"></i></a>
+
+  <!-- Vendor JS Files -->
+  <script src="../assets/vendor/purecounter/purecounter_vanilla.js"></script>
+  <script src="../assets/vendor/aos/aos.js"></script>
+  <script src="../assets/vendor/bootstrap/js/bootstrap.bundle.min.js"></script>
+  <script src="../assets/vendor/glightbox/js/glightbox.min.js"></script>
+  <script src="../assets/vendor/isotope-layout/isotope.pkgd.min.js"></script>
+  <script src="../assets/vendor/swiper/swiper-bundle.min.js"></script>
+  <script src="../assets/vendor/waypoints/noframework.waypoints.js"></script>
+  <script src="../assets/vendor/php-email-form/validate.js"></script>
+
+  <!-- Template Main JS File -->
+  <script src="../assets/js/main.js"></script>
+
+</body>
+
+</html>
