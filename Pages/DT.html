@@ -251,7 +251,31 @@ Information Gain: Information Gain is a measure of how much information is gaine
           <img src="../assets/img/gini.png" class="img-fluid" alt="" >
       </div>
       <p style="font-size: 20px;font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif, Courier, monospace; padding: 10px;">
-        Decision Tree visualizations
+        Here is a brief explanation of the arguments passed to the DecisionTreeClassifier constructor:
+
+        criterion: The function to measure the quality of a split. "entropy" is a measure of impurity based on the information theory, while "gini" is a measure based on the Gini impurity.
+        
+        splitter: The strategy used to choose the split at each node. "random" means that random splits are tried, while "best" means that the best split is chosen.
+        
+        max_depth: The maximum depth of the decision tree.
+        
+        min_samples_split: The minimum number of samples required to split an internal node.
+        
+        min_samples_leaf: The minimum number of samples required to be at a leaf node.
+        
+        min_weight_fraction_leaf: The minimum weighted fraction of the sum total of weights (of all the input samples) required to be at a leaf node.
+        
+        max_features: The maximum number of features to consider when looking for the best split.
+        
+        random_state: The seed used by the random number generator.
+        
+        max_leaf_nodes: The maximum number of leaf nodes in the decision tree.
+        
+        min_impurity_decrease: A node will be split if this split induces a decrease of the impurity greater than or equal to this value.
+        
+        class_weight: Weights associated with classes in the form {class_label: weight}.
+        
+        By setting these arguments to specific values, the user can customize the behavior of the decision tree algorithm. Once the instance of DecisionTreeClassifier is created, it can be trained on a labeled dataset using the fit() method and used to predict the class labels of new data points using the predict() method.
 
    </p>
    <div class="col-lg-6">
@@ -264,6 +288,11 @@ Information Gain: Information Gain is a measure of how much information is gaine
 </div>
 <br/>
 <hr/>
+<p style="font-size: 20px;font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif, Courier, monospace; padding: 10px;">
+  It's important to note that the choice of criterion and splitter can have a significant impact on the performance of the decision tree algorithm. For example, "gini" is typically used for smaller datasets, while "entropy" may be better for larger datasets with more features. Similarly, "best" is usually a better choice than "random" for most datasets.
+
+In practice, it's often a good idea to try out different combinations of hyperparameters and evaluate their performance on a validation set before selecting the best model. The 
+</p>
 <div class="col-lg-6">
   <img src="../assets/img/dt2_cm.png" class="img-fluid" alt="" >
 
@@ -274,6 +303,9 @@ Information Gain: Information Gain is a measure of how much information is gaine
 </div>
 <br/>
 <hr/>
+<p style="font-size: 20px;font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif, Courier, monospace; padding: 10px;">
+  By increasing the value of min_samples_split, the decision tree will have fewer nodes and may become less complex. This can help to avoid overfitting, especially when dealing with small datasets or noisy data. However, setting it too high may result in underfitting, where the decision tree is too simple and cannot capture the underlying patterns in the data. Therefore, it's important to carefully choose this hyperparameter based on the specific problem and the characteristics of the dataset.
+</p>
 <div class="col-lg-6">
   <img src="../assets/img/dt3.png" class="img-fluid" alt="" >
 
