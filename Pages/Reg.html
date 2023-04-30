@@ -1,0 +1,322 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="utf-8">
+  <meta content="width=device-width, initial-scale=1.0" name="viewport">
+
+  <title>Climate penalty</title>
+  <meta content="" name="description">
+  <meta content="" name="keywords">
+
+  <!-- Favicons -->
+  <link href="../assets/img/favicon.png" rel="icon">
+  <link href="../assets/img/apple-touch-icon.png" rel="apple-touch-icon">
+
+  <!-- Google Fonts -->
+  <link href="https://fonts.googleapis.com/css?family=Open+Sans:300,300i,400,400i,600,600i,700,700i|Roboto:300,300i,400,400i,500,500i,700,700i&display=swap" rel="stylesheet">
+
+  <!-- Vendor CSS Files -->
+  <link href="../assets/vendor/animate.css/animate.min.css" rel="stylesheet">
+  <link href="../assets/vendor/aos/aos.css" rel="stylesheet">
+  <link href="../assets/vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet">
+  <link href="../assets/vendor/bootstrap-icons/bootstrap-icons.css" rel="stylesheet">
+  <link href="../assets/vendor/boxicons/css/boxicons.min.css" rel="stylesheet">
+  <link href="../assets/vendor/glightbox/css/glightbox.min.css" rel="stylesheet">
+  <link href="../assets/vendor/swiper/swiper-bundle.min.css" rel="stylesheet">
+
+  <!-- Template Main CSS File -->
+  <link href="../assets/css/style.css" rel="stylesheet">
+
+  <!-- =======================================================
+  * Template Name: Moderna - v4.11.0
+  * Template URL: https://bootstrapmade.com/free-bootstrap-template-corporate-moderna/
+  * Author: BootstrapMade.com
+  * License: https://bootstrapmade.com/license/
+  ======================================================== -->
+</head>
+
+<body>
+
+  <!-- ======= Header ======= -->
+  <header id="header" class="fixed-top ">
+    <div class="container d-flex align-items-center justify-content-lg-between">
+
+      <h1 class="text-light"><a href="../index.html"><span style="color: white; font-size: 25px;">Avinya</span></a></h1>
+      <!-- Uncomment below if you prefer to use an image logo -->
+      <!-- <a href="index.html" class="logo me-auto me-lg-0"><img src="../assets/img/logo.png" alt="" class="img-fluid"></a>-->
+
+      <nav id="navbar" class="navbar">
+        <ul>
+          <li><a  href="../index.html">Home</a></li>
+          <li><a href="./EDA.html">EDA</a></li>
+         
+          <li class="dropdown"><a href="#"><span>Unsupervised Learning</span> <i class="bi bi-chevron-down"></i></a>
+            <ul>
+              <li><a href="./Clustering.html">Clustering</a></li>
+              <li><a href="./ARM.html">ARM</a></li>
+            </ul>
+          </li>
+          <li class="dropdown"><a href="#"><span>Supervised Learning</span> <i class="bi bi-chevron-down"></i></a>
+            <ul>
+              <li><a href="./DT.html">Decision Trees</a></li>
+              
+              <li><a href="./NB.html">Naive Bayes</a></li>
+              <li><a href="./SVM.html">SVM</a></li>
+            </ul>
+          </li>
+          <li><a href="./NN.html">Neural Networks</a></li>
+          <li><a class="active" href="./Reg.html">Regression</a></li>
+          <li><a href="../conc.html">Conclusion</a></li>
+
+          
+        </ul>
+        <i class="bi bi-list mobile-nav-toggle"></i>
+      </nav><!-- .navbar -->
+      
+
+    </div>
+  </header><!-- End Header -->
+
+
+
+
+  
+  <main id="main">
+     <!-- ======= About Us Section ======= -->
+     <section class="breadcrumbs">
+      <div class="container">
+
+        <div class="d-flex justify-content-between align-items-center">
+          <h2>Regression</h2>
+          <ol>
+            <li><a href="../index.html">Home</a></li>
+            <li>Regression</li>
+          </ol>
+        </div>
+
+      </div>
+    </section><!-- End About Us Section -->
+   
+    <!-- ======= Features Section ======= -->
+   
+<div class="tabset">
+  <!-- Tab 1 -->
+  <input type="radio" name="tabset" id="tab1" aria-controls="marzen" checked>
+  <label for="tab1">Introduction</label>
+ 
+  <!-- Tab 3 -->
+  <input type="radio" name="tabset" id="tab3" aria-controls="dunkles">
+  <label for="tab3"> Data Prep & Analysis </label>
+  <!-- Tab 4 -->
+  <input type="radio" name="tabset" id="tab4" aria-controls="rach">
+  <label for="tab4">Results & Conclusion</label>
+  
+  <div class="tab-panels">
+    <section id="marzen" class="tab-panel">
+      
+        <div class="container" style="max-width: 100%;">
+  
+          <div class="row" >
+            <div class="col-md-5">
+              <img src="../assets/img/ll1.jpg" class="img-fluid" alt="" >
+            </div>
+            <div class="col-md-7">
+              
+              <p style="font-size: 20px;font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif, Courier, monospace;">
+
+                Linear regression is a basic and widely used technique in statistics and machine learning for modeling the relationship between a dependent variable and one or more independent variables. 
+The basic idea behind linear regression is to find the best fitting line through a set of data points, where "best fitting" means minimizing the distance between the line and the data points. This line is called the regression line or the line of best fit. The regression line is defined by the equation y = mx + b, where y is the output variable, x is the input variable, m is the slope of the line, and b is the y-intercept.
+To find the best values for the slope and y-intercept, the method of least squares is commonly used. This involves minimizing the sum of the squared differences between the predicted values of y (based on the regression line) and the actual values of y in the data set. The resulting slope and y-intercept are then used to predict the output variable for new values of the input variable.
+The goal of linear regression is to find the line of best fit that minimizes the distance between the predicted values and the actual values.             
+</p>
+            </div>
+            <div class="col-md-7">
+              
+            <p style="font-size: 20px;font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif, Courier, monospace; padding: 10px;">
+             
+              Linear regression models the relationship between a dependent variable (also called the response variable) and one or more independent variables (also called the predictor variables or features) by fitting a linear equation to the data. The linear equation takes the following form:
+
+              y = b0 + b1x1 + b2x2 + ... + bn*xn
+              
+              where:
+              
+              y is the dependent variable
+              x1, x2, ..., xn are the independent variables
+              b0 is the intercept (the value of y when all independent variables are equal to 0)
+              b1, b2, ..., bn are the coefficients (also called the slopes) that represent the change in y for a one-unit change in x1, x2, ..., xn, respectively.
+          The distance between the predicted values and the actual values is measured using a loss function, such as the mean squared error.
+              
+              To find the values of b0, b1, b2, ..., bn that minimize the loss function, we use a method called ordinary least squares (OLS) regression. OLS regression involves finding the values of b0, b1, b2, ..., bn that minimize the sum of the squared distances between the predicted values and the actual values. This is done by calculating the partial derivatives of the loss function with respect to each coefficient and setting them equal to 0.
+              
+              Once the values of b0, b1, b2, ..., bn have been determined, the linear equation can be used to predict the value of the dependent variable for any set of values of the independent variables.
+              
+
+
+              </p>
+            </div>
+              <div class="col-md-5">
+                <img src="../assets/img/ll2.gif" class="img-fluid" alt="" style="width: 100%;height: 100%;">
+              </div>
+          </div>
+  
+          <div class="row" data-aos="fade-up">
+            
+              
+              <p style="font-size: 20px;font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif, Courier, monospace; padding: 10px;">
+                Linear regression has several limitations, including:
+
+                Linearity assumption: Linear regression assumes that the relationship between the dependent variable and the independent variables is linear. If the relationship is not linear, then linear regression may not be appropriate.
+                
+                Outliers: Linear regression is sensitive to outliers, which can have a significant impact on the line of best fit. Outliers can distort the slope and intercept and reduce the accuracy of the predictions.
+                
+                Multicollinearity: Linear regression assumes that the independent variables are not highly correlated with each other. If the independent variables are highly correlated, then it can be difficult to determine the individual effects of each variable on the dependent variable.
+                
+                Non-normality: Linear regression assumes that the errors (the difference between the predicted values and the actual values) are normally distributed. If the errors are not normally distributed, then linear regression may not be appropriate.
+              </p>
+           
+            </div>
+            <hr/>
+          
+         
+  
+        </div>
+      </section><!-- End Features Section -->
+    <section id="rauchbier" class="tab-panel">
+      <p style="font-size: 20px;font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif, Courier, monospace; padding: 10px;">Used Labelled data: labelledData.csv <br/>
+        Link to the dataset: <a href="https://github.com/SreePa2129/avinya.github.io/tree/main/data/Label_data/labelledData.csv">Dataset</a>
+        <br/> Link to the Python code: <a href="https://github.com/SreePa2129/avinya.github.io/blob/main/code/Python/MachineLearningProject_v3.ipynb">Code</a>
+
+        <br/>
+      </p>
+      <div class="row">
+        <div class="col-lg-6">
+          <img src="../assets/img/lr/od1.jpg" class="img-fluid" alt="" >
+    
+        </div>
+    
+        <div class="col-lg-6 pt-4 pt-lg-0">
+          <img src="../assets/img/lr/corr1.jpg" class="img-fluid" alt="" >
+      </div>
+         
+          <p style="font-size: 20px;font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif, Courier, monospace; padding: 10px;">
+            
+            The dataset include numeric values that is pollutants emissions of Carbondioxide, Methane, FGas and Nitrogen oxide and Risk factor.
+          <br/>
+            The correlation coefficient between Carbon and Methane is 0.040891, indicating a weak positive correlation between these two variables. The correlation coefficient between Carbon and Nitrogen is 0.953339, indicating a strong positive correlation between these two variables. The correlation coefficient between Methane and FGas is 0.018603, indicating a very weak positive correlation between these two variables.
+
+            The last column in the table, labeled "Risk", represents the correlation between each variable and a variable called "Risk". It looks like all of the variables are positively correlated with "Risk", but to varying degrees. Carbon has the strongest positive correlation with Risk (correlation coefficient of 0.586004), followed by Nitrogen (0.569405), Methane (0.443381), and FGas (0.462020).
+            Therefore, from the above results we will take 2 independent variables Carbon and Methane and Create a new dependent variable Total emissions
+    </p>
+    <div class="col-lg-6">
+      <img src="../assets/img/lr/od2.jpg" class="img-fluid" alt="" >
+
+    </div>
+
+    <div class="col-lg-6 pt-4 pt-lg-0">
+      <img src="../assets/img/lr/corr2.jpg" class="img-fluid" alt="" >
+  </div>
+         
+        <p style="font-size: 20px;font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif, Courier, monospace; padding: 10px;">
+          the correlation coefficient between Carbon and Methane is 0.040891, indicating a weak positive correlation between these two variables. The correlation coefficient between Methane and Label is 0.993582, indicating a strong positive correlation between these two variables.
+
+          The last row and column in the table, labeled "Label", represent the correlation between each variable and a variable called "Label". It looks like both Carbon and Methane are positively correlated with Label, but to a relatively weak degree. The correlation coefficient between Carbon and Label is 0.153644, while the correlation coefficient between Methane and Label is 0.993582.
+        </p>
+     <br/>
+     
+      
+    </section>
+    <section id="dunkles" class="tab-panel">
+      
+      <div class="container" style="max-width: 100%;">
+
+        <div class="row" >
+          
+       
+            
+            <p style="font-size: 20px;font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif, Courier, monospace;">
+              In linear regression, it's common to normalize the data to ensure that the scale and distribution of each feature variable are comparable and don't influence the results of the regression analysis disproportionately. There are different ways to normalize data, but one common method is to standardize the data, which involves subtracting the mean value of each feature and dividing by its standard deviation.              
+</p>
+<div >
+  <img src="../assets/img/lr/scatter.jpg" class="img-fluid" alt="" style="width: 100%; height:'60%">
+</div>
+          </div>
+          <div >
+            
+          <p style="font-size: 20px;font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif, Courier, monospace; padding: 10px;">
+            The scatter plot can help visualize the relationship between the two variables for the 'train' data and how well the 'prediction' data matches that relationship
+          
+
+            </p>
+          </div>
+          <hr/>
+          <h4>Results</h4>
+            <div>
+              <img src="../assets/img/lr/result.jpg" class="img-fluid" alt="" style="width: 100%;height: 100%;">
+            </div>
+        </div>
+
+        <div class="row" data-aos="fade-up">
+          
+            
+            <p style="font-size: 20px;font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif, Courier, monospace; padding: 10px;">
+              The results indicate that the model has a perfect fit, as indicated by the R-squared value of 1.000, meaning that all of the variation in the dependent variable is explained by the independent variables. The coefficient estimates for x1 and x2 indicate that for every unit increase in x1, y increases by 677.9300, and for every unit increase in x2, y increases by 10430. The standard errors of the coefficient estimates suggest that these results are highly statistically significant (P < 0.05). The constant term of -710.1700 indicates the value of y when both x1 and x2 are equal to zero. The F-statistic and associated p-value suggest that the overall model is highly significant. The Omnibus test indicates that the residuals of the model do not meet the assumption of normality, with a significant p-value, and the Jarque-Bera test suggests that the residuals are highly skewed and have excess kurtosis. The Durbin-Watson test for autocorrelation indicates that there may be some correlation between the residuals. Overall, these results suggest that while the model has a perfect fit, there may be some issues with the assumptions underlying the regression analysis. 
+            </p>
+         
+          </div>
+          <hr/>
+        
+          <div class="row">
+            <div class="col-lg-6">
+              <img src="../assets/img/lr/err1.jpg" class="img-fluid" alt="" >
+        
+            </div>
+        
+            <div class="col-lg-6 pt-4 pt-lg-0">
+              <img src="../assets/img/lr/err2.jpg" class="img-fluid" alt="" >
+          </div>
+             
+              <p style="font-size: 20px;font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif, Courier, monospace; padding: 10px;">
+                The error distribution is shown abovw. The standard errors estimate the variability of the regression coefficients. The lower the standard errors, the more precise the coefficient estimates are, and the less variation there is in the data. The t-statistic and p-value associated with each coefficient help determine if it is statistically significant or not.
+               </p>
+               <div >
+                <img src="../assets/img/lr/line.jpg" class="img-fluid" alt="" >
+          
+              </div>
+              <p style="font-size: 20px;font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif, Courier, monospace; padding: 10px;">
+                Linear regression line represents the relationship between a dependent variable and one or more independent variables. It is a straight line that best fits the data points, with the goal of minimizing the sum of squared errors between the observed and predicted values. The equation for a simple linear regression line is y = mx + b, where y is the dependent variable, x is the independent variable, m is the slope, and b is the intercept. The slope represents the change in y for every unit change in x, while the intercept represents the value of y when x is 0.               </p>
+        </div>
+
+
+      </div>
+    </section><!-- End Features Section -->
+
+   
+</div>
+
+
+
+    
+  
+
+  </main><!-- End #main -->
+
+  
+  <a href="#" class="back-to-top d-flex align-items-center justify-content-center"><i class="bi bi-arrow-up-short"></i></a>
+
+  <!-- Vendor JS Files -->
+  <script src="../assets/vendor/purecounter/purecounter_vanilla.js"></script>
+  <script src="../assets/vendor/aos/aos.js"></script>
+  <script src="../assets/vendor/bootstrap/js/bootstrap.bundle.min.js"></script>
+  <script src="../assets/vendor/glightbox/js/glightbox.min.js"></script>
+  <script src="../assets/vendor/isotope-layout/isotope.pkgd.min.js"></script>
+  <script src="../assets/vendor/swiper/swiper-bundle.min.js"></script>
+  <script src="../assets/vendor/waypoints/noframework.waypoints.js"></script>
+  <script src="../assets/vendor/php-email-form/validate.js"></script>
+
+  <!-- Template Main JS File -->
+  <script src="../assets/js/main.js"></script>
+
+</body>
+
+</html>
